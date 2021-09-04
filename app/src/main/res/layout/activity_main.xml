@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/add_work_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="新增工作名稱"
+        android:textSize="25dp"
+        android:singleLine="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_work_begintime"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="start"
+            android:onClick="selectBeginTime"
+            />
+        <Button
+            android:id="@+id/add_work_endtime"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:text="end"
+            android:onClick="selectEndTime"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/singleSelect"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Month"
+        android:text=""
+        android:paddingVertical="10dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:background="@android:drawable/editbox_background"
+        android:clickable="true"
+        />
+    <TextView
+        android:id="@+id/t_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select day"
+        android:paddingVertical="10dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:background="@android:drawable/editbox_background"
+        android:clickable="false"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/t_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select day"
+        android:paddingVertical="10dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:background="@android:drawable/editbox_background"
+        android:clickable="false"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/t_feb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select day"
+        android:paddingVertical="10dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:background="@android:drawable/editbox_background"
+        android:clickable="false"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/work_chooseType"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="select work type"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:background="@android:drawable/editbox_background"
+        android:clickable="true"
+        android:visibility="visible"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/work_salary_PT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="輸入時薪"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:singleLine="true"
+        android:inputType="number"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/work_salary_PThour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:singleLine="true"
+        android:inputType="number"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/work_salary_Day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="輸入日薪"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:singleLine="true"
+        android:inputType="number"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/work_salary_Month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="輸入月薪"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:singleLine="true"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/add_work_secure"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="確定"/>
+
+
+
+
+
+</LinearLayout>
